@@ -14,8 +14,6 @@ namespace RollTheBall
         private Dictionary<EBallType, GameObject> _ballModelByType = new Dictionary<EBallType, GameObject>();
         private EBallType _activeBall = EBallType.Baseball;
 
-        public EBallType ActiveBall => _activeBall;
-
         private void Awake()
         {
             _ballModelByType[EBallType.Baseball] = _baseballBall;
