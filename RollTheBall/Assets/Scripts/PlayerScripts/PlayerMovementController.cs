@@ -8,6 +8,8 @@ namespace RollTheBall
         [SerializeField] private FloatingJoystick _Joystick;
         [SerializeField] private Rigidbody _rigidbody;
 
+        public Rigidbody Rigidbody { get => _rigidbody; set => _rigidbody = value; }
+
         public void FixedUpdate()
         {
             var direction = Vector3.forward * _Joystick.Vertical +
